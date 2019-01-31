@@ -5,6 +5,7 @@ services:
     restart: unless-stopped
     container_name: exosuite-vsftpd
     image: fauria/vsftpd
+    network_mode: host
     environment:
       - FTP_USER=exosuite
       - FTP_PASS=${FTP_PASS}
