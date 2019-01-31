@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  exosuite-vsftpd:
+    restart: unless-stopped
+    container_name: exosuite-vsftpd
+    image: fauria/vsftpd
+    environment:
+      - FTP_USER=exosuite
+      - FTP_PASS=root
+      - PASV_ENABLE=NO
+      - LOG_STDOUT=log
+    ports:
+      - "127.0.0.1:20:20"
+      - "127.0.0.1:21:21"
