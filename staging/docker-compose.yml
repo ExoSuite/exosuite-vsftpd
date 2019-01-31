@@ -7,7 +7,7 @@ services:
     image: fauria/vsftpd
     environment:
       - FTP_USER=exosuite
-      - FTP_PASS=root
+      - FTP_PASS=aUxDF94ALY2YWrTpxhc5gs8
       - PASV_ENABLE=NO
       - LOG_STDOUT=log
     ports:
